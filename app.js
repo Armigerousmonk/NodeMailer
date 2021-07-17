@@ -6,6 +6,7 @@ const nodemailer = require('nodemailer');
 
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 // View engine setup
 
@@ -78,4 +79,4 @@ async function main() {
 });
 
 
-app.listen(3000, () => console.log('Server started....'));
+app.listen(port, () => console.log('Server started....'));
